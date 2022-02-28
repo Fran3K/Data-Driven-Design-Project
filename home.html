@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Upcoming Solar Eclipses</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="./assets/head-2.ico" />
+</head>
+<body id="body">
+<img src="./assets/dragon.png" id="dragon"></div>
+<div id="rect" onmouseover="circleover();" onmouseout="circleout();">
+<div id="circleover"></div>
+<div id = "title" onmouseover="circleover();" onmouseout="circleout();">
+    <br>Upcoming 
+    <br>Solar Eclipses
+</div>
+<div class="subtitle"onmouseover="circleover();" onmouseout="circleout();">
+    <br>See the future 
+    <br>using the past</div>
+</div>
+<div id="story">In Ancient China, solar and lunar eclipses were regarded as heavenly signs that foretold the future of the Emperor. The ancient Chinese believed that solar eclipses occur when a celestial dragon devours the sun. They also believed that this dragon attacks the Moon during lunar eclipses. In the Chinese language, the term for eclipse was "shi" which also means "to eat".</div>
+<div id="tex">
+    <br>Bring the legend to life and be the main character!
+    <br>command the dragon by moving the mouse and cover the suns to make an eclipse happen, you will be able to get more information about it.
+    <br>When you make an eclipse, only the suns representing the longest lasting ones of the selected one will remain visible.
+</div>
+    <div class="vl"></div>
+    <div id="titlelegend">What you will be able to see</div>
+    <div><img id="legend" src="./assets/legend1.png"></div>
+    <div id="legend2">
+        <br>- The day it happens
+        <br>- The exact time
+        <br>- The type of eclipse  
+    </div>
+    <div id="eclypsetype">
+        <br>T = Total
+        <br>P = Partial
+        <br>A = Annular
+        <br>H = Hybrid
+    </div>
+    <a href="https://www.nasa.gov/audience/forstudents/5-8/features/nasa-knows/what-is-an-eclipse-58" id="typemeaning">See what it means</a>
+    <div id="textbutton">Click the sun to start</div>
+    <div id="sun"></div>
+    <a href="./page_P5.html" id="moon"></a>
+
+<script>
+    function circleover(){
+        document.getElementById('circleover').style.opacity = '100%';
+        document.getElementById('body').style.backgroundColor = '#1c0300';
+        document.getElementById('dragon').style.opacity = '100%';
+    }
+    function circleout(){
+        document.getElementById('circleover').style.opacity = '0%';
+        document.getElementById('body').style.backgroundColor = 'rgb(20, 20, 20)';
+    }
+
+    function moonover(){
+        document.getElementById('moon').style.opacity = '100%';
+        document.getElementById('body').style.backgroundColor = '#1c0300';
+
+    }
+
+    function moonout(){
+        document.getElementById('body').style.backgroundColor = 'rgb(20, 20, 20)';
+        document.getElementById('moon').style.opacity = '0%';
+    }
+</script>
+</body>
